@@ -1,4 +1,3 @@
-# load './spec_helper.rb'
 require 'spec_helper'
 
 using HashWithKeyAccessMethod
@@ -24,5 +23,9 @@ describe HashWithKeyAccessMethod do
 	it 'Assign new key' do
 		hash.age = 13
 		expect(hash.age).to eq(13)
+	end
+
+	it 'Assign new key [] access' do
+		expect(hash[:age]).to eq(13)
 	end
 end
