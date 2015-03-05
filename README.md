@@ -1,6 +1,6 @@
 # HashWithKeyAccessMethod
 
-TODO: Write a gem description
+Hash key access method.
 
 ## Installation
 
