@@ -9,5 +9,8 @@ module HashWithKeyAccessMethod
 			self[name]
 		end
 	end
-end
 
+	refine Hash do
+		prepend ::HashWithKeyAccessMethod
+	end
+end
