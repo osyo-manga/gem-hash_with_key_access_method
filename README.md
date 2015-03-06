@@ -41,6 +41,14 @@ hash.age
 # => 13
 hash[:age]
 # => 13
+
+
+# Use included Hash.
+require "hash_with_key_access_method/included"
+
+hashs = [{name: :homu}, {name: :mami}, {name: :mado}]
+hashs.map &:name
+# => [:homu, :mami, :mado]
 ```
 
 ## Contributing
