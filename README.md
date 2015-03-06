@@ -19,6 +19,9 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
+# Using refinements
+using HashWithKeyAccessMethod
+
 hash = { name: :homu, "name2" => :mami}
 
 hash.name # to hash[:name]
